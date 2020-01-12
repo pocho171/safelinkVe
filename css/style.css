@@ -93,6 +93,8 @@ a.logotype { display:block; width:240px; height:60px; background:url('../img/log
 .mini .left_menu .numtask { right:6px; }
 
 .left_menu li a .icon { display:block; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('../img/menu_icon.png?u=15'); background-position:0px 0px; background-repeat:no-repeat; }
+.left_menu li a .i_adverts { display:block; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/PhH2CYm/icons8-avi-n-de-papel-64.png'); background-position:0px 0px; background-repeat:no-repeat; }
+
 .mini .left_menu li a .icon { left:0px!important; }
 
 .left_menu li a .i_adverts { background-position:-4px 0px; }
