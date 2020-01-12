@@ -1,0 +1,469 @@
+/ *!
+Elegido, un Select Box Enhancer para jQuery y Prototype
+por Patrick Filler para Harvest, http://getharvest.com
+
+Version 1.8.2
+Fuente completa en https://github.com/harvesthq/chosen
+Copyright (c) 2011-2017 Harvest http://getharvest.com
+
+Licencia MIT, https://github.com/harvesthq/chosen/blob/master/LICENSE.md
+Este archivo es generado por `grunt build`, no lo edite a mano.
+* /
+
+/ * @group Base * /
+.chosen-container {
+  posición: relativa;
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  tamaño de fuente: 14px;
+  -webkit-user-select: ninguno;
+     -moz-user-select: ninguno;
+      -ms-user-select: ninguno;
+          selección de usuario: ninguno;
+}
+
+.chosen-container * {
+  -webkit-box-sizing: border-box;
+          tamaño de la caja: border-box;
+}
+
+.chosen-container .chosen-drop {
+  posición: absoluta;
+  Top 100%;
+  índice z: 1010;
+  ancho: 100%;
+  borde: 2px sólido # c9d1d3;
+  borde superior: 0;
+  fondo: #fff;
+  clip: rect (0, 0, 0, 0);
+}
+
+.chosen-container.chosen-with-drop .chosen-drop {
+  clip: auto;
+}
+
+.chosen-container a {
+  cursor: puntero;
+}
+
+.chosen-container .search-choice .group-name, .chosen-container .chosen-single .group-name {
+  margen derecho: 4px;
+  desbordamiento: oculto;
+  espacio en blanco: nowrap;
+  desbordamiento de texto: puntos suspensivos;
+  peso de fuente: normal;
+  color: # 999999;
+}
+
+.chosen-container .search-choice .group-name: after, .chosen-container .chosen-single .group-name: after {
+  contenido: ":";
+  relleno-izquierda: 2px;
+  alineación vertical: arriba;
+}
+
+/* @final */
+/ * @group Single Elegido * /
+.chosen-container-single .chosen-single {
+  posición: relativa;
+  bloqueo de pantalla;
+  desbordamiento: oculto;
+  relleno: 0 0 0 10px;
+  altura: 46 px;
+  borde: 2px sólido # c9d1d3;
+  radio de borde: 3px;
+  color de fondo: #FFFFFF;
+  clip de fondo: cuadro de relleno;
+  color: # 000;
+  decoración de texto: ninguno;
+  espacio en blanco: nowrap;
+  altura de línea: 44 px;
+}
+
+.chosen-container-single .chosen-default {
+  color: # 999;
+}
+
+.chosen-container-single .chosen-single span {
+  bloqueo de pantalla;
+  desbordamiento: oculto;
+  margen derecho: 26px;
+  desbordamiento de texto: puntos suspensivos;
+  espacio en blanco: nowrap;
+}
+
+.chosen-container-single .chosen-single-with-deselect span {
+  margen derecho: 38 px;
+}
+
+.chosen-container-single .chosen-single abbr {
+  posición: absoluta;
+  arriba: 6px;
+  derecha: 26 px;
+  bloqueo de pantalla;
+  ancho: 12px;
+  altura: 12px;
+  fondo: url ("../ img / chosen-sprite.png") -42px 1px sin repetición;
+  tamaño de fuente: 1px;
+}
+
+.chosen-container-single .chosen-single abbr: hover {
+  posición de fondo: -42px -10px;
+}
+
+.chosen-container-single.chosen-disabled .chosen-single abbr: hover {
+  posición de fondo: -42px -10px;
+}
+
+.chosen-container-single .chosen-single div {
+  posición: absoluta;
+  arriba: 0;
+  derecha: 0;
+  bloqueo de pantalla;
+  ancho: 22px;
+  altura: 100%;
+}
+
+.chosen-container-single .chosen-single div b {
+  bloqueo de pantalla;
+  ancho: 100%;
+  altura: 100%;
+  fondo: url ("../ img / chosen-sprite.png") sin repetición 0px 12px;
+}
+
+.chosen-container-single .chosen-search {
+  posición: relativa;
+  índice z: 1010;
+  margen: 0;
+  relleno: 3px 4px;
+  espacio en blanco: nowrap;
+}
+
+.chosen-container-single .chosen-search input [type = "text"] {
+  margen: 1px 0;
+  relleno: 4px 20px 4px 5px;
+  ancho: 100%;
+  altura: auto;
+  esquema: 0;
+  borde: 1px sólido #aaa;
+  fondo: url ("../ img / chosen-sprite.png") sin repetición 100% -20px;
+  tamaño de fuente: 1em;
+  font-family: sans-serif;
+  altura de línea: normal;
+  radio de borde: 0;
+}
+
+.chosen-container-single .chosen-drop {
+  margen superior: -1px;
+  radio de borde: 0 0 4px 4px;
+  clip de fondo: cuadro de relleno;
+}
+
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  posición: absoluta;
+  clip: rect (0, 0, 0, 0);
+}
+
+/* @final */
+/ * @group Results * /
+.chosen-container .chosen-results {
+  color: # 444;
+  posición: relativa;
+  overflow-x: oculto;
+  desbordamiento-y: auto;
+  margen: 0 4px 4px 0;
+  relleno: 0 0 0 4px;
+  altura máxima: 240 px;
+  -webkit-overflow-scrolling: toque;
+}
+
+.chosen-container .chosen-results li {
+  pantalla: ninguno;
+  margen: 0;
+  acolchado: 5px 6px;
+  estilo de lista: ninguno;
+  altura de línea: 15 px;
+  ajuste de palabra: palabra de interrupción;
+  -webkit-touch-callout: ninguno;
+}
+
+.chosen-container .chosen-results li.active-result {
+  display: elemento de lista;
+  cursor: puntero;
+}
+
+.chosen-container .chosen-results li.disabled-result {
+  display: elemento de lista;
+  color: #ccc;
+  cursor: predeterminado;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  color de fondo: # 3875d7;
+  imagen de fondo: -webkit-gradient (lineal, superior izquierda, inferior izquierda, color-stop (20%, # 3875d7), color-stop (90%, # 2a62bc));
+  imagen de fondo: gradiente lineal (# 3875d7 20%, # 2a62bc 90%);
+  color: #fff;
+}
+
+.chosen-container .chosen-results li.no-results {
+  color: # 777;
+  display: elemento de lista;
+  fondo: # f4f4f4;
+}
+
+.chosen-container .chosen-results li.group-result {
+  display: elemento de lista;
+  peso de fuente: negrita;
+  cursor: predeterminado;
+}
+
+.chosen-container .chosen-results li.group-option {
+  relleno-izquierda: 15px;
+}
+
+.chosen-container .chosen-results li em {
+  estilo de fuente: normal;
+  decoración de texto: subrayado;
+}
+
+/* @final */
+/ * @group Multi Chosen * /
+.chosen-container-multi .chosen-choices {
+  posición: relativa;
+  desbordamiento: oculto;
+  margen: 0;
+  relleno: 0 5px 0 10px;
+  ancho: 100%;
+  altura: auto;
+  borde: 2px sólido # c9d1d3;
+  radio de borde: 3px;
+  color de fondo: #fff;
+  cursor: texto;
+}
+
+.chosen-container-multi .chosen-choices li {
+  flotador izquierdo;
+  estilo de lista: ninguno;
+}
+
+.chosen-container-multi .chosen-choices li.search-field {
+  margen: 0;
+  relleno: 0;
+  espacio en blanco: nowrap;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input [type = "text"] {
+  margen: 1px 0;
+  relleno: 0;
+  altura: 42 px;
+  esquema: 0;
+  borde: 0! importante;
+  fondo: transparente! importante;
+  -webkit-box-shadow: ninguno;
+          cuadro-sombra: ninguno;
+  color: # 999;
+  tamaño de fuente: 100%;
+  font-family: sans-serif;
+  altura de línea: normal;
+  radio de borde: 0;
+  ancho: 25px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+  posición: relativa;
+  margen: 7px 5px 0px 0;
+  relleno: 3px 24px 3px 10px;
+  borde: 1px sólido # c9d1d3;
+  ancho máximo: 100%;
+  radio de borde: 3px;
+  color de fondo: # f4f7f9;
+  clip de fondo: cuadro de relleno;
+  color: # 333;
+  altura de línea: 22 px;
+  cursor: predeterminado;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice span {
+  ajuste de palabra: palabra de interrupción;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  posición: absoluta;
+  arriba: 8px;
+  derecha: 5px;
+  bloqueo de pantalla;
+  ancho: 12px;
+  altura: 12px;
+  fondo: url ("../ img / chosen-sprite.png") -58px 1px sin repetición;
+  tamaño de fuente: 1px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close: hover {
+  posición de fondo: -58px -10px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+  relleno derecho: 5px;
+  borde: 1px sólido #ccc;
+  color de fondo: # e4e4e4;
+  imagen de fondo: -webkit-gradient (lineal, superior izquierda, inferior izquierda, color-stop (20%, # f4f4f4), color-stop (50%, # f0f0f0), color-stop (52%, # e8e8e8), a (#eee));
+  imagen de fondo: gradiente lineal (# f4f4f4 20%, # f0f0f0 50%, # e8e8e8 52%, #eee 100%);
+  color: # 666;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-focus {
+  fondo: # d4d4d4;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
+  posición de fondo: -42px -10px;
+}
+
+.chosen-container-multi .chosen-results {
+  margen: 0;
+  relleno: 0;
+}
+
+.chosen-container-multi .chosen-drop .result-selected {
+  display: elemento de lista;
+  color: #ccc;
+  cursor: predeterminado;
+}
+
+/* @final */
+/ * @group Active * /
+.chosen-container-active .chosen-single {
+  borde: 2px sólido # 5897fb;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+  borde: 2px sólido # c9d1d3;
+  radio-borde-inferior-derecho: 0;
+  radio-borde-abajo-izquierda: 0;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div {
+  borde izquierdo: ninguno;
+  fondo: transparente;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  posición de fondo: -23px 12px;
+}
+
+.chosen-container-active .chosen-choices {
+  borde: 2px sólido # 5897fb;
+}
+
+.chosen-container-active .chosen-choices li.search-field input [type = "text"] {
+  color: # 222! importante;
+}
+
+/* @final */
+/ * @group Disabled Support * /
+.chosen-disabled {
+  opacidad: 0.5! importante;
+  cursor: predeterminado;
+}
+
+.chosen-disabled .chosen-single {
+  cursor: predeterminado;
+}
+
+.chosen-disabled .chosen-choices .search-choice .search-choice-close {
+  cursor: predeterminado;
+}
+
+/* @final */
+/ * @grupo de derecha a izquierda * /
+.chosen-rtl {
+  alineación de texto: derecha;
+}
+
+.chosen-rtl .chosen-single {
+  desbordamiento: visible;
+  relleno: 0 8px 0 0;
+}
+
+.chosen-rtl .chosen-single span {
+  margen derecho: 0;
+  margen izquierdo: 26 px;
+  dirección: rtl;
+}
+
+.chosen-rtl .chosen-single-with-deselect span {
+  margen izquierdo: 38 px;
+}
+
+.chosen-rtl .chosen-single div {
+  derecha: auto;
+  izquierda: 3px;
+}
+
+.chosen-rtl .chosen-single abbr {
+  derecha: auto;
+  izquierda: 26 px;
+}
+
+.chosen-rtl .chosen-choices li {
+  flotar derecho;
+}
+
+.chosen-rtl .chosen-choices li.search-field input [type = "text"] {
+  dirección: rtl;
+}
+
+.chosen-rtl .chosen-choices li.search-choice {
+  margen: 3px 5px 3px 0;
+  relleno: 3px 5px 3px 19px;
+}
+
+.chosen-rtl .chosen-choices li.search-choice .search-choice-close {
+  derecha: auto;
+  izquierda: 4px;
+}
+
+.chosen-rtl.chosen-container-single .chosen-results {
+  margen: 0 0 4px 4px;
+  relleno: 0 4px 0 0;
+}
+
+.chosen-rtl .chosen-results li.group-option {
+  relleno derecho: 15px;
+  relleno-izquierda: 0;
+}
+
+.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
+  borde derecho: ninguno;
+}
+
+.chosen-rtl .chosen-search input [type = "text"] {
+  relleno: 4px 5px 4px 20px;
+  fondo: url ("../ img / chosen-sprite.png") sin repetición -30px -20px;
+  dirección: rtl;
+}
+
+.chosen-rtl.chosen-container-single .chosen-single div b {
+  posición de fondo: 6px 2px;
+}
+
+.chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b {
+  posición de fondo: -12px 2px;
+}
+
+/* @final */
+/ * @group Compatibilidad con retina * /
+@media solo pantalla y (-webkit-min-device-pixel-ratio: 1.5), solo pantalla y (resolución mínima: 144dpi), solo pantalla y (resolución mínima: 1.5dppx) {
+  .chosen-rtl .chosen-search input [type = "text"],
+  .chosen-container-single .chosen-single abbr,
+  .chosen-container-single .chosen-single div b,
+  .chosen-container-single .chosen-search input [type = "text"],
+  .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .chosen-container .chosen-results-scroll-down span,
+  .chosen-container .chosen-results-scroll-up span {
+    background-image: url ("../ img/chosen-sprite@2x.png")! important;
+    tamaño de fondo: 52px 37px! importante;
+    background-repeat: no-repeat! importante;
+  }
+}
+
+/* @final */
