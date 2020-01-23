@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+	margin:0;
+	padding:0;
+	font-size:16px;
+	/*background:#eee url(bg.png) repeat-x top center fixed;*/
+	font-family:'Raleway', sans-serif; 
+	font-weight:600;
+}
+
+#header {
+	width:100%;
+	padding:10px 0;
+	background:#eee;
+	text-align:center;
+}
+
+#header img {
+	height:1em;
+	width:auto;
+}
+
+#container {
+	margin:0 auto;
+}
+
+h1 {
+	font-size:4em;
+	text-align:center;
+	margin:0;
+	font-family:'Raleway', sans-serif; 
+	font-weight:200;
+}
+
+h2 {
+	font-size:3.5em;
+	text-shadow: 0px 0px 5px rgba(15, 83, 131, 1);
+	font-family:'Raleway', sans-serif; 
+	font-weight:200;
+}
+
+a:link, a:visited {
+	color:#06C;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:#09F;
+	text-decoration:underline;
+}
+
+#description {
+	width:/*520px*/ 100%;
+	text-align:center;
+	clear:both;
+}
+
+#description p {
+		padding:0 1em;
+	}
+
+#footer {
+	width:100%;
+	padding:10px 0;
+	background:#eee;
+	text-align:center;
+}
+
+.output {
+	display:none;
+	margin-top:20px;
+}
+
+.output textarea {
+	width:/*500px*/ 100%;
+}
+
+input, textarea {
+	color:#333;
+	font-size:1.2em;
+	width:/*400px*/ 100%;
+}
+
+.wrapper {
+	color:#FFF; 
+	margin:20px auto; 
+	padding:5px 20px 20px 20px; 
+	text-align:center;
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	border-radius: 10px; 
+	-moz-box-shadow: inset 0 0 10px #074c86; 
+	-webkit-box-shadow: inset 0 0 10px #074c86; 
+	box-shadow: inner 0 0 10px #074c86;
+	display:block;
+}
+
+#facebookwrapper {
+	background:#2274b9 /*url(shine.png)*/ no-repeat top left; 
+}
+#facebookwrapper h2 {
+	background:url(facebook.png) repeat-x center left; 
+	margin:20px 10px 5px 10px;
+}
+
+#twitterwrapper {
+	background:#4d9ed8 /*url(shine.png)*/ no-repeat top left; 
+}
+#twitterwrapper h2 {
+	background:url(twitter.png) repeat-x center left; 
+	margin:20px 10px 5px 10px;
+}
+
+#googlepluswrapper {
+	background:#999 /*url(shine.png)*/ no-repeat top left; 
+	-moz-box-shadow: inset 0 0 10px #666; 
+	-webkit-box-shadow: inset 0 0 10px #666; 
+	box-shadow: inner 0 0 10px #666;
+}
+#googlepluswrapper h2 {
+	background:url(googleplus.png) repeat-x center left; 
+	margin:20px 10px 5px 10px;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+#linkedinwrapper {
+	background:#2274b9 /*url(shine.png)*/ no-repeat top left; 
+}
+#linkedinwrapper h2 {
+	background:url(linkedin.png) repeat-x center left; 
+	margin:20px 10px 5px 10px;
+}
+
+
+#pinterestwrapper {
+	background:#bc0d1e /*url(shine.png)*/ no-repeat top left; 
+	-moz-box-shadow: inset 0 0 10px #330000; 
+	-webkit-box-shadow: inset 0 0 10px #330000; 
+	box-shadow: inner 0 0 10px #330000;
+}
+#pinterestwrapper h2 {
+	background:url(pinterest.png) repeat-x center left; 
+	margin:20px 10px 5px 10px;
+}
+
+
+#emailwrapper {
+	background:#666 /*url(shine.png)*/ no-repeat top left; 
+	-moz-box-shadow: inset 0 0 10px #333; 
+	-webkit-box-shadow: inset 0 0 10px #333; 
+	box-shadow: inner 0 0 10px #333;
+}
+#emailwrapper h2 {
+	background:url(email.png) repeat-x center left; 
+	margin:20px 10px 5px 10px;
+}
+
+
+
+.makelink {
+	border:none;
+	color:#1a4e7f;
+	padding:5px;
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	border-radius: 10px; 
+}
+
+.makelink:hover {
+	background-color:#fff;
+	color:#000;
+	-moz-box-shadow: inset 0 0 15px #569ee1; 
+	-webkit-box-shadow: inset 0 0 15px #569ee1; 
+	box-shadow: inner 0 0 15px #569ee1;
+}
+
+.makelink.reset:hover {
+	background-color:#fff !important;
+	color:#600;
+	-moz-box-shadow: inset 0 0 15px #600; 
+	-webkit-box-shadow: inset 0 0 15px #600; 
+	box-shadow: inner 0 0 15px #600;
+}
+
+#facebookwrapper .makelink {
+	background-color:#b4d6f6;
+}
+
+#twitterwrapper .makelink {
+	background-color:#8cd4f5;
+}
+
+#googlepluswrapper .makelink, #emailwrapper .makelink {
+	background-color:#CCC;
+}
+
+#googlepluswrapper .makelink:hover, #emailwrapper .makelink:hover {
+	-moz-box-shadow: inset 0 0 15px #FFF; 
+	-webkit-box-shadow: inset 0 0 15px #FFF; 
+	box-shadow: inner 0 0 15px #FFF;
+}
+
+#linkedinwrapper .makelink {
+	background-color:#b4d6f6;
+}
+
+.light {
+	color:#649ece;
+}
+
+
+
+
+#sharebox {
+border-radius: 5px;
+color:#666;
+text-align:center;
+}
+
+#sharebox p {
+	text-align:center;
+	padding:5px;
+	margin:0;
+	font-size:1.25em;
+	line-height:110%;
+}
+
+#sharebox .wdt {
+display:inline-block;
+padding: 5px;
+vertical-align:top;
+}
+
+@media (min-width: 600px) {
+	#container {
+		text-align:center;
+		
+		
+	}
+	.wrapper {
+	width:400px;
+	vertical-align:top;
+	display:inline-block;
+	}
+	
+	#description {
+		width:600px;
+		margin:0 auto;
+	}
+	#description p {
+		padding:0 1em;
+	}
+}
