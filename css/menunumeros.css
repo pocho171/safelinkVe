@@ -127,6 +127,9 @@ a.logotype { display:block; width:240px; height:60px; background:url('../img/log
 .left_menu li a .i_clase24 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/R3kGtvM/2-4-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
 .left_menu li a .i_clase25 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/R7xYhKH/2-5-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
 .left_menu li a .i_clase26 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/h7Yh26g/2-6-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
+.left_menu li a .i_mclase1 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/Lky0LJN/clases-modulo1.png'); background-position:0px 0px; background-repeat:no-repeat; }
+.left_menu li a .i_mclase2 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/WzPs48s/clases-modulo2.png'); background-position:0px 0px; background-repeat:no-repeat; }
+.left_menu li a .i_mclase3 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/qpPzNvY/clases-modulo3.png'); background-position:0px 0px; background-repeat:no-repeat; }
 .mini .left_menu li a .icon { left:0px!important; }
 
 .left_menu li a .i_adverts { background-position:-4px 0px; }
