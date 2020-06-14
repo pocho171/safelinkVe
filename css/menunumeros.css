@@ -143,6 +143,10 @@ a.logotype { display:block; width:240px; height:60px; background:url('../img/log
 .left_menu li a .i_tema14 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/DrXr2dJ/tema1-4-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
 .left_menu li a .i_tema15 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/xDZHm24/tema1-5-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
 .left_menu li a .i_tema16 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/W29VY4v/tema1-6-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
+.left_menu li a .i_tema21 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/FqGnPzr/tema2-1-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
+.left_menu li a .i_tema22 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/xHPDGkh/tema2-2-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
+.left_menu li a .i_tema23 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/zRjr3Z2/tema2-3-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
+.left_menu li a .i_tema24 { display:active; width:62px; height:66px; position:absolute; top:0px; left:24px; background-image:url('https://i.ibb.co/Lp7xQhY/tema2-4-52x41.png'); background-position:0px 0px; background-repeat:no-repeat; }
 .mini .left_menu li a .icon { left:0px!important; }
 
 .left_menu li a .i_adverts { background-position:-4px 0px; }
